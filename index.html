@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestaboard — Retro Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="terminal-dot red"></span>
+      <span class="terminal-dot yellow"></span>
+      <span class="terminal-dot green"></span>
+      <span class="terminal-label">VESTABOARD TERMINAL</span>
+    </div>
+    <div class="board-frame">
+      <div id="board" class="board"></div>
+    </div>
+    <div class="controls">
+      <button data-module="clock" class="active">CLOCK</button>
+      <button data-module="quotes">QUOTES</button>
+      <button data-module="weather">WEATHER</button>
+      <button data-module="stats">STATS</button>
+      <button data-module="custom">CUSTOM</button>
+    </div>
+    <div id="custom-input" class="custom-input hidden">
+      <input type="text" id="custom-text" placeholder="TYPE YOUR MESSAGE..." maxlength="132">
+      <button id="custom-send">SEND</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
